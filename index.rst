@@ -7,4 +7,4 @@ App Engine.
 .. toctree::
    :hidden::
    
-   overview
+   quickstart
