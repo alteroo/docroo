@@ -8,3 +8,4 @@ App Engine.
    :hidden::
    
    quickstart
+   privatedocs
