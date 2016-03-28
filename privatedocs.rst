@@ -1,13 +1,14 @@
-Private Docs
+Public Docs
 ========================================
 
-Docroo can be configured in such a way that it requires authentication to view
-the documents
+By default Docroo protects documents and requires visitors to access documents
+with an authenticated Google account. Sometimes you want to make all your
+documentation public. Here is how to do this.
 
-Protected Documentation
-------------------------
-To set up private/protected documentation edit the app.yaml file
-and uncomment the 3 references to secure:
+Serving Public Documentation
+-------------------------------
+To make documents available publicly edit the app.yaml file
+and comment any references to `login:admin`:
 It should look like this when you are done::
 
     ...
@@ -15,18 +16,18 @@ It should look like this when you are done::
       static_files: _build/html/index.html
       upload: _build/html/index.html
       secure: always
-      login: admin
+      # login: admin
 
     - url: /
       static_dir: _build/html
       secure: always
-      login: admin
+      # login: admin
 
     - url: /(.*\.(gif|png|jpg|ico|js|css|html))
       static_files: /
       upload: _build/html/(.*\.(gif|png|jpg|ico|js|css|html))
       secure: always
-      login: admin
+      # login: admin
     ...
 
 

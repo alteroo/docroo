@@ -29,6 +29,7 @@ Add your documentation as .rst files
 
 Deploy
 ----------
+To deploy, run the following command from the documentation directory
 ::
 
     make docsite

@@ -8,4 +8,5 @@ App Engine.
    :hidden::
    
    quickstart
+   https
    privatedocs
