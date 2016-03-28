@@ -103,7 +103,10 @@ html_theme = 'sphinx_rtd_theme'
 # Theme options are theme-specific and customize the look and feel of a theme
 # further.  For a list of options available for each theme, see the
 # documentation.
-#html_theme_options = {}
+# html_theme_options = {
+# 'inlinecss': 'body{border:3px solid red}',
+#'linktotheme':False,
+#}
 
 # Add any paths that contain custom themes here, relative to this directory.
 #readability_path = os.path.dirname(os.path.abspath(sphinxtheme.__file__))
@@ -146,6 +149,7 @@ html_static_path = ['_static']
 
 # Custom sidebar templates, maps document names to template names.
 #html_sidebars = {}
+sidebarbgcolor = "red"
 
 # Additional templates that should be rendered to pages, maps page names to
 # template names.
