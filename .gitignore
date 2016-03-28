@@ -1,0 +1,15 @@
+*.pyc
+# don't include third-party dependencies.
+!lib/README.md
+.DS_Store
+venv/
+lib/
+zzz/
+.zedstate
+.installed.cfg
+docs/bin/
+docs/parts/
+docs/_build/
+bin/
+parts/
+_build/
